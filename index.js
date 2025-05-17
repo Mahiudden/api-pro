@@ -16,9 +16,9 @@ const client = new MongoClient(uri, {
     version: ServerApiVersion.v1,
     strict: true,
     deprecationErrors: true,
-  },
-  sslValidate: false // এখানে SSL ভেরিফিকেশন বন্ধ করলাম (ডেভেলপমেন্টে ভালো, প্রোডাকশনে সাবধান)
+  }
 });
+
 
 async function run() {
   try {
